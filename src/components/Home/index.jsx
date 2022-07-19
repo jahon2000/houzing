@@ -1,5 +1,6 @@
 import React from 'react'
 import Filter from '../../components/Filter'
+import Card from '../Card'
 import Carousel from '../Carousel'
 import Recommem from '../Recommem'
 import { Container } from './style'
@@ -9,7 +10,8 @@ export const Home = () => {
     <Container>
       <Filter />
       <Carousel />
-      <Recommem/>
+      <Recommem />
+      <Card/>
     </Container>
   )
 }
