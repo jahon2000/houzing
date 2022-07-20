@@ -13,7 +13,7 @@ margin-top: 32px;
 Container.Card = styled.div`
 width:380px ;
 max-width:1440px ;
-height:420px ;
+height:430px ;
 background: #FFFFFF;
 border:var(--border);
 border-radius: 3px;
@@ -29,7 +29,7 @@ export const Title = styled.p`
   font-size: 16px;
   line-height: 24px;
   color: #0d263b;
-  margin:24px 0 4px 20px;
+  margin:20px 0 4px 20px;
 `;
 
 Title.Items = styled.p`
@@ -48,21 +48,24 @@ width:25px ;
 height:20px ;
 `
 export const Wrapp = styled.div` 
-margin-left:40px ;
+align-items:center ;
+justify-content:center ;
 display:flex ;
-gap:71px;
+gap:65px;
 margin-top:18px ;
 `
 
 export const Wrapper = styled.div`
   display: flex;
   margin-bottom: 8px;
-  margin-left: 12px;
-  gap: 33px;
+  margin-left: 10px;
+  gap: 35px;
   font-family: "Montserrat";
+  justify-content:center ;
+  align-items:center ;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   color: #696969;
 `;
@@ -86,3 +89,35 @@ Title.Item = styled.div`
   margin-top:8px ;
 `;
 
+Title.P = styled.div`
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0d263b;
+  margin-left:20px   ;  
+`;
+
+export const Wrap = styled.div`  
+display:flex ;
+justify-content:space-between;
+margin-bottom:12px ;
+`
+
+Wrap.Wraapper = styled.div` 
+display:flex ;
+margin-right:20px ;
+gap:20px ;
+`
+
+export const IMG = styled.img`
+width :35px ;
+height:20px ;
+`
+IMG.IMGS = styled.img`
+  width: 35px;
+  height: 25px;
+  background: #f6f8f9;
+  border-radius: 40px;
+`;

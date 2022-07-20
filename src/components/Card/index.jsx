@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Hr, Img, Title, Wrapp, Wrapper } from "./style";
+import { Container, Hr, IMG, Img, Title, Wrap, Wrapp, Wrapper } from "./style";
 import { home } from "../../mock/card";
 
 export const Card = () => {
@@ -15,14 +15,23 @@ export const Card = () => {
               <Img.Icon src={value.icons} />
               <Img.Icon src={value.icons} />
               <Img.Icon src={value.iconss} />
+              <Img.Icon src={value.icons1} />
             </Wrapp>
             <Wrapper>
               <Wrapper>{value.bed}</Wrapper>
               <Wrapper>{value.bath}</Wrapper>
               <Wrapper>{value.garage}</Wrapper>
+              <Wrapper>{value.ruler}</Wrapper>
             </Wrapper>
             <Hr />
             <Title.Item>{value.discount}</Title.Item>
+            <Wrap>
+              <Title.P>{value.prise}</Title.P>
+              <Wrap.Wraapper>
+                <IMG src={value.resize} />
+                <IMG.IMGS src={value.love} />
+              </Wrap.Wraapper>
+            </Wrap>
           </Container.Card>
         );
       })}

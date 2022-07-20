@@ -3,8 +3,10 @@ import house from "../assets/images/house.png";
 import villa from "../assets/images/villa.jpg";
 import BathIcon from "../assets/icons/bath.svg";
 import BedIcon from '../assets/icons/bed.svg';
-import CarIcon from '../assets/icons/car.svg'
-import RulerIcon from '../assets/icons/ruler.svg'
+import CarIcon from '../assets/icons/car.svg';
+import RulerIcon from '../assets/icons/ruler.svg';
+import ResizeIcon from '../assets/icons/resize.svg';
+import LoveIcon from '../assets/icons/love.svg';
 
 export const home = [
   {
@@ -16,9 +18,13 @@ export const home = [
     bed: "4 Beds",
     bath: "5 Baths",
     garage: "1 Garage",
+    ruler: "1200 Sq Ft",
     icons: BedIcon,
     icon: BathIcon,
     iconss: CarIcon,
+    icons1: RulerIcon,
+    love: LoveIcon,
+    resize: ResizeIcon,
   },
 
   {
@@ -30,9 +36,13 @@ export const home = [
     icons: BedIcon,
     icon: BathIcon,
     iconss: CarIcon,
+    icons1: RulerIcon,
     bed: "4 Beds",
     bath: "5 Baths",
     garage: "1 Garage",
+    ruler: "1200 Sq Ft",
+    love: LoveIcon,
+    resize: ResizeIcon,
   },
   {
     name: "New Apartment Nice Wiew",
@@ -43,9 +53,13 @@ export const home = [
     icons: BedIcon,
     icon: BathIcon,
     iconss: CarIcon,
+    icons1: RulerIcon,
     bed: "4 Beds",
     bath: "5 Baths",
     garage: "1 Garage",
+    ruler: "1200 Sq Ft",
+    love: LoveIcon,
+    resize: ResizeIcon,
   },
 ];
 
