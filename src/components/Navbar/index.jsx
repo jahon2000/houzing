@@ -9,7 +9,7 @@ export const Navbar = () => {
   const navigate = useNavigate()
   return (
     <Wrapper>
-    <Container>
+      <Container>
         <NavbarWrapper>
           <Logo onClick={()=>navigate('/home')}>
             <Logo.Icon />
@@ -35,7 +35,8 @@ export const Navbar = () => {
               >Log Out</button>
             </>
           ) : (
-              <Button onClick={()=>navigate('/singin')} width={'120px'}>Login</Button>
+                <Button onClick={() => navigate('/singin')} width={'120px'}>Login</Button>
+               
           )}
      </NavbarWrapper>
       </Container>

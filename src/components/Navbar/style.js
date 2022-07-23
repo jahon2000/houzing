@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {NavLink} from 'react-router-dom'
 import { ReactComponent as logoIcon } from "../../assets/icons/logo.svg";
+
+
 export const Wrapper = styled.div` 
 display: flex;
 flex-direction:column ;
@@ -13,20 +15,32 @@ export const Container = styled.div`
   justify-content:center ;
   background:var(--primaryColor);
   width: 100%;
+  @media(max-width:550px){
+    width:100% ;
+    align-items:center ;
+    justify-content:space-between ;
+    gap:50px ;
+  }
   `
-export const NavbarWrapper = styled.div` 
-display:flex ;
-align-items: center;
-height:64px ;
-max-width:1440px ;
-padding: 0 100px;
-font-family:'Montserrat' ;
-font-style: normal;
-font-weight:500 ;
-font-size:16px ;
-width:100% ;
-color:#ffffff ;
-`
+export const NavbarWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  height: 64px;
+  max-width: 1440px;
+  padding: 0 100px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  color: #ffffff;
+  @media (max-width: 550px) {
+    width: 100%;
+    align-items:center ;
+    padding: 0 80px;
+    /* gap: 50px; */
+  } 
+`;
 
 export const NavbarBody = styled.div`  
 display:flex ;
@@ -34,9 +48,13 @@ flex:1 ;
 align-items:center;
 justify-content:center ;
 color: white;
+
 .active{
     color: #00fff5;
-}
+};
+  @media(max-width:550px){
+    display:none ;
+  }
 `
 export const Link = styled(NavLink)` 
 color: white;
@@ -54,9 +72,18 @@ align-items:center ;
 cursor: pointer;
 `
 
-Logo.Icon = styled(logoIcon)``;
-Logo.Title = styled('div')` 
-margin-left:11px ;
-font-size:20px ;
-font-weight:500px ;
-`
+Logo.Icon = styled(logoIcon)`
+@media (max-width:550px){
+  width:30px ;
+  height: 36px;
+}
+`;
+Logo.Title = styled("div")`
+  margin-left: 11px;
+  font-size: 20px;
+  font-weight: 500px;
+  @media (max-width: 550px) {
+   font-size:16px ;
+   font-weight: 500;
+  }
+`;

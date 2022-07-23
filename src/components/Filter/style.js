@@ -13,6 +13,9 @@ export const Container = styled.div`
   align-items: center;
   border-radius: 2px;
   gap: 10px;
+  @media (max-width:550px){
+    display:none ;
+  }
 `;
 
 export const Icons = styled.div``;
