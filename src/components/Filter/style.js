@@ -13,8 +13,16 @@ export const Container = styled.div`
   align-items: center;
   border-radius: 2px;
   gap: 10px;
+  /* z-index:2; */
   @media (max-width:550px){
-    display:none ;
+    position:absolute ;
+    background:white ;
+    z-index:999 ;
+    bottom:10px ;
+    width:343px ;
+    height:142px ;
+    display:flex ;
+    flex-direction:column ;
   }
 `;
 
@@ -37,6 +45,9 @@ export const ContentWrapperr = styled.div`
   display: flex;
   flex-direction: column;
   height:360px ;
+  @media (max-width:550px){
+    display:none ;
+  }
 `;
 
 export const Fragment = styled.div`
@@ -44,6 +55,9 @@ export const Fragment = styled.div`
   gap: 20px;
   margin-bottom: 20px;
   width: 100%;
+  @media (max-width: 550px) {
+    display: none;
+  }
 `;
 export const Title = styled.div`
   font-family: "Montserrat";
@@ -54,3 +68,13 @@ export const Title = styled.div`
   color: #0d263b;
   margin-bottom: 10px;
 `;
+
+
+export const BtnWrap = styled.div` 
+display:flex ;
+@media (max-width:550px){
+  display: flex;
+  gap:20px;
+  padding:0 10px;
+}
+`

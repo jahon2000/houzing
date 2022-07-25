@@ -9,7 +9,7 @@ export const Recommem = () => {
       <Item>
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit
       </Item>
-          </>
+      </>
     </Container>
   );
 }

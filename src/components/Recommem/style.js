@@ -4,6 +4,7 @@ const Container = styled.div`
 width: 100%;
 align-items:center ;
 justify-content:center ;
+
 `
 const Title = styled.p`
   font-family: "Montserrat";
@@ -11,10 +12,13 @@ const Title = styled.p`
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
-  text-align:center ;
+  text-align: center;
   color: #0d263b;
   margin-top: 96px;
-  margin-bottom:6px ;
+  margin-bottom: 6px;
+  @media (max-width: 550px) {
+    margin-top: 50px;
+  }
 `;
 const Item = styled.p`
   font-family: "Montserrat";
@@ -24,6 +28,11 @@ const Item = styled.p`
   line-height: 24px;
   color: #696969;
   text-align:center ;
+  @media (max-width:550px){
+    font-size:14px ;
+    line-height:18px ;
+    text-align:center ;
+  }
 `;
 
 

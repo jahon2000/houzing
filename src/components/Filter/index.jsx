@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  BtnWrap,
   Container,
   ContentWrapperr,
   Fragment,
@@ -56,12 +57,16 @@ export const Filter = () => {
   return (
     <div className="center">
       <Container>
+
         <Input
           pl={"50px"}
           placeholder={"Enter an address, neighborhood, city, or ZIP code"}
-        >
+          >
           <Icons.SearchIcon />
         </Input>
+        
+        
+          <BtnWrap>
         <Popover placement="bottomRight" content={content} trigger="click">
           <Button type={"secondary"} width={"131px"}>
             <Icons.SearchAdvensed />
@@ -72,6 +77,8 @@ export const Filter = () => {
           <Icons.SearchLoop />
           Search
         </Button>
+          </BtnWrap>
+          
       </Container>
     </div>
   );

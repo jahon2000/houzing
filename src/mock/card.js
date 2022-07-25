@@ -61,5 +61,6 @@ export const home = [
     love: LoveIcon,
     resize: ResizeIcon,
   },
+  
 ];
 

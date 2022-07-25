@@ -45,6 +45,11 @@ export const Container = styled.input`
     outline-color: #0061DF ;
 
   }
+ @media (max-width:550px){
+  ::placeholder{
+    font-size:10px ;
+  }
+ }
 `;
 
 export const Wrapper = styled.div`
@@ -55,6 +60,12 @@ export const Wrapper = styled.div`
   margin-left: ${({ ml }) => `${ml}px`};
   margin-top: ${({ mt }) => `${mt}px`};
   margin-bottom: ${({ mb }) => `${mb}px`};
+  @media (max-width: 550px) {
+    margin-top: 10px;
+    width: 300px;
+    padding: 0 10px;
+    border:none ;
+  }
 `;
 
 export const Icon = styled.div`  
@@ -62,5 +73,8 @@ position:absolute ;
 transform:translate(-50% , -50%) ;
 top:50% ;
 left:30px ;
+@media (max-width:550px){
+ left:40px ;
+}
 `
 

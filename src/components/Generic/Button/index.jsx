@@ -10,7 +10,7 @@ export const Button = ({
     mr,
     ml,
     mb,
-    mt
+  mt,
 }) => {
   return (
       <Container
@@ -21,7 +21,8 @@ export const Button = ({
           type={type}
           height={height}
           width={width}
-          onClick={onClick}
+      onClick={onClick}
+      
       >
           {children}
     </Container>
