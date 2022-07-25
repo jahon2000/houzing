@@ -3,6 +3,7 @@ import Filter from '../../components/Filter'
 // import AliseCarousel from '../AliceCarousel'
 import Card from '../Card'
 import Carousel from '../Carousel'
+import Choose from '../Chose'
 // import Elastic from '../Elastic'
 import Recommem from '../Recommem'
 import { Container } from './style'
@@ -16,6 +17,7 @@ export const Home = () => {
       {/* <Elastic/> */}
       {/* <AliseCarousel/> */}
       <Card/>
+      <Choose/>
     </Container>
   )
 }

@@ -19,7 +19,7 @@ const Item = styled.div`
   font-size: 28px;
   line-height: 36px;
   color: #ffffff;
-  letter-spacing:3px ;
+  letter-spacing:3.5px ;
 `;
 const Wrap = styled.div`
   max-width:1440px ;
