@@ -1,4 +1,5 @@
 import React ,{useRef} from 'react'
+import CarouselCard from '../CarouselCard';
 import { CarouselWrapper, Icon,  Img, MainCarousel, Img1, Overlay } from './style'
 
 export const Carousel = () => {
@@ -7,6 +8,7 @@ export const Carousel = () => {
     <CarouselWrapper>
       <Icon.Left onClick={() => slider.current?.prev()} />
       <Icon.Right onClick={() => slider.current?.next()} />
+      <CarouselCard/>
       <MainCarousel ref={slider} dots autoplay>
         <Img />
         <Img1 />

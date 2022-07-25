@@ -5,7 +5,7 @@ import img1 from "../../assets/images/uycha.jpg";
 import img2 from "../../assets/images/uy.jpg";
 
 const CarouselWrapper = styled("div")`
-  /* position:relative ; */
+  position:relative ;
 `;
 
 const MainCarousel = styled(Carousel)`
