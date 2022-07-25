@@ -17,7 +17,7 @@ export const Container = styled.div`
   background: var(--primaryColor);
   width: 100%;
   @media (max-width: 550px) {
-    padding: 0 55px;
+    padding: 0 50px;
   }
 `;
 export const NavbarWrapper = styled.div`
@@ -69,12 +69,18 @@ export const Logo = styled.div`
   }
 `;
 
-Logo.User = styled(logoUser)``;
+Logo.User = styled(logoUser)`
+@media (max-width:550px){
+  width:25px ;
+  height:25px ;
+}
+`;
 
 export const UserWrap = styled.div`
   display: none;
   @media (max-width: 550px) {
     display: block;
+    margin-left:15px ;
   }
 `;
 
