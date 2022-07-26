@@ -6,18 +6,17 @@ import img2 from "../../assets/images/uy.jpg";
 
 const CarouselWrapper = styled("div")`
   position:relative ;
+  justify-content:center ;
+  align-items:center ;
 `;
 
 const MainCarousel = styled(Carousel)`
   height: fit-content;
+  
 `;
 const Img = styled.img.attrs({
   src: img1,
 })`
-  background-repeat: no-repeat;
-  background-color: black;
-  background-size: cover;
-  background-position: center;
   height: 571px;
   @media (max-width: 550px) {
     height: 100vh;
@@ -27,9 +26,6 @@ const Img = styled.img.attrs({
 const Img1 = styled.img.attrs({
   src: img2,
 })`
-  background: black;
-  background-color: black;
-  background-image: linear-gradient(black, black, black, black);
   height: 571px;
   @media (max-width: 550px) {
     height: 100vh;

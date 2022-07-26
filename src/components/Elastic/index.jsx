@@ -10,14 +10,19 @@ const breakPoints = [
 
 const Elastic = () => {
   return (
-    <>  
+    <div>
       <Carousel breakPoints={breakPoints}>
-        
+        <div>
           <Card />
+        </div>
+        <div>
           <Card />
+        </div>
+        <div>
           <Card />
+        </div>
       </Carousel>
-    </>
+    </div>
   );
 }
 

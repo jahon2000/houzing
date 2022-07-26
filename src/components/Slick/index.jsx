@@ -1,8 +1,6 @@
 import React from 'react'
-// import { Container } from './style'
 import Slider from 'react-slick'
-import { Container, LogoAp, LogoDom, LogoKv, LogoVill } from './style';
-// import Category from '../Category'
+import { Container, LogoAp, LogoDom,  LogoKv, LogoVill } from './style';
 const Slick = () => {
      var settings = {
        dots: true,
@@ -37,7 +35,7 @@ const Slick = () => {
          {
            breakpoint: 480,
            settings: {
-             slidesToShow: 2,
+             slidesToShow: 1,
              slidesToScroll: 1,
              centerPadding: "20px",
            },
@@ -49,6 +47,7 @@ const Slick = () => {
       <Slider {...settings}>
         <div>
           <LogoKv />
+         
         </div>
         <div>
           <LogoAp />
@@ -60,10 +59,10 @@ const Slick = () => {
           <LogoDom />
         </div>
         <div>
-          <LogoKv />
+          <LogoAp />
         </div>
         <div>
-          <LogoAp />
+          <LogoVill />
         </div>
       </Slider>
     </Container>

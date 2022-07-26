@@ -13,7 +13,6 @@ const Category = () => {
         <LogoAp />
         <LogoVill />
         <LogoDom />
-        
       </Item>
     </Container>
   );

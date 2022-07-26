@@ -10,6 +10,7 @@ overflow-y:hidden;
 justify-content:center;
 align-items: center;
 margin-bottom:50px;
+position:relative;
 
 `
 
