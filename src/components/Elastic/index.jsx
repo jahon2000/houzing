@@ -16,9 +16,6 @@ const Elastic = () => {
           <Card />
           <Card />
           <Card />
-          <Card />
-          <Card />
-       
       </Carousel>
     </>
   );

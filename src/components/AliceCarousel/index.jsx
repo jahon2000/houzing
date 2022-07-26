@@ -10,14 +10,12 @@ const responsive = {
   1024: { items: 3 },
 };
 
-const items = [
-    <Card />,
-];
+const items = [<Card />, <Card />, <Card />];
 
 const AliseCarousel = () => {
     const slider  = useRef()
     return (
-      <div>
+      <div style={{width:'100%' , display:'flex'}}>
         <Icon.Left onClick={() => slider.current?.prev()} />
         <Icon.Right onClick={() => slider.current?.next()} />
         <AliceCarousel
