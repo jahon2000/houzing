@@ -3,10 +3,11 @@ import Filter from '../../components/Filter'
 // import AliseCarousel from '../AliceCarousel'
 import Card from '../Card'
 import Carousel from '../Carousel'
-import Category from '../Category'
+// import Category from '../Category'
 import Choose from '../Chose'
 // import Elastic from '../Elastic'
 import Recommem from '../Recommem'
+import Slick from '../Slick'
 import { Container } from './style'
 
 export const Home = () => {
@@ -19,7 +20,8 @@ export const Home = () => {
       {/* <Elastic/> */}
       <Card/>
       <Choose />
-      <Category/>
+      {/* <Category/> */}
+      <Slick/>
     </Container>
   )
 }

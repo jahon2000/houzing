@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Wrap, Wrapper } from './style'
+import { Container, Item, LogoAp, LogoDom, LogoKv, LogoVill, Wrap, Wrapper } from './style'
 
 const Category = () => {
   return (
@@ -8,6 +8,13 @@ const Category = () => {
       <Wrapper>
         Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
       </Wrapper>
+      <Item>
+        <LogoKv />
+        <LogoAp />
+        <LogoVill />
+        <LogoDom />
+        
+      </Item>
     </Container>
   );
 }

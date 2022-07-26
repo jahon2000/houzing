@@ -1,7 +1,11 @@
 import styled from "styled-components";
-
+// import logoHouses from '../../assets/images/houss.png'
+import logoApart from "../../assets/images/apartment.png";
+import logoOffice from "../../assets/images/office.png";
+import logoVilla from "../../assets/images/villaa.png";
 export const Container = styled.div` 
 margin-top: 80px;
+margin-bottom:50px;
 `
 
 export const Wrap = styled.div`
@@ -27,3 +31,30 @@ export const Wrapper = styled.div`
   text-align:center ;
   margin-top:8px ;
 `;
+
+export const Item = styled.div` 
+display:flex ;
+align-items: center;
+justify-content:center ;
+max-width:1440px ;
+margin-top:32px ;
+gap: 20px;
+`
+
+export const LogoKv = styled.img.attrs({
+  src: logoApart,
+})`
+
+`
+  ;
+export const LogoAp = styled.img.attrs({
+  src:logoApart,
+})``
+
+export const LogoVill = styled.img.attrs({
+  src:logoOffice,
+})``
+
+export const LogoDom = styled.img.attrs({
+  src:logoVilla,
+})``

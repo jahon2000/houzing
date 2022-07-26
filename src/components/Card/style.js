@@ -8,6 +8,9 @@ justify-content:center ;
 flex-wrap:wrap ;
 gap: 20px;
 margin-top: 32px;
+@media (max-width:550px){
+  padding:0 16px;
+}
 `
 
 Container.Card = styled.div`
