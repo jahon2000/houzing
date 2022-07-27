@@ -12,26 +12,30 @@ max-width:1440px ;
 const Item = styled.div`
   max-width: 1440px;
   text-align:center ;
-  margin-top:60px ;
+  margin-top:80px ;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 45px;
   line-height: 36px;
   color: #ffffff;
-  letter-spacing:3.5px ;
+  @media (max-width:550px){
+    font-size:28px;
+  }
 `;
 const Wrap = styled.div`
-  max-width:1440px ;
-  text-align:center ;
+  max-width: 1440px;
+  text-align: center;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 22px;
   line-height: 20px;
   color: #ffffff;
-  margin-top:15px ;
-  letter-spacing:1.5px ;
+  margin-top: 20px;
+  @media (max-width: 550px) {
+    font-size: 14px;
+  }
 `;
 
 const Wrapper = styled.div` 

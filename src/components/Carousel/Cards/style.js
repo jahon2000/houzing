@@ -6,7 +6,9 @@ width:100%;
 justify-content:center ;
 align-items:center ;
 margin-top:136px;
-margin-bottom:50px;
+@media (max-width:550px){
+  margin-top:90px ;
+}
 `
 
 export const Logo = styled.img.attrs({
