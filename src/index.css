@@ -76,7 +76,24 @@ body {
 }
 
 @media (max-width:550px) {
-  .sc-efBctP{
+  .sc-jOrMOR{
+    display:none !important;
+  }
+}
+
+@media (max-width:450px) {
+  .sc-jOrMOR{
+    display:none !important;
+  }
+}
+
+@media (max-width:450px) {
+  .sc-BeQoi{
+    display:none !important;
+  }
+}
+@media (max-width:550px) {
+  .sc-BeQoi{
     display:none !important;
   }
 }

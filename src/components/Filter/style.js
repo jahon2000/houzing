@@ -18,9 +18,9 @@ export const Container = styled.div`
     position:absolute ;
     background:white ;
     z-index:999 ;
-    bottom:10px ;
+    bottom:-30px ;
     width:343px ;
-    height:142px ;
+    height:130px ;
     display:flex ;
     flex-direction:column ;
   }
