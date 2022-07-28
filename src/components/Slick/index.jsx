@@ -41,7 +41,7 @@ const Slick = () => {
            },
          },
        ],
-     };
+      };
   return (
     <Container>
       <Slider {...settings}>

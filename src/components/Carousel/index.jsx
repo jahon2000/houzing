@@ -1,6 +1,6 @@
 import React ,{useRef} from 'react'
 import CarouselCard from '../CarouselCard';
-import { CarouselWrapper, Icon,  Img, MainCarousel, Img1, Overlay } from './style'
+import { CarouselWrapper, Icon,  Img, MainCarousel, Img1 } from './style'
 
 export const Carousel = () => {
     const slider = useRef();
@@ -15,7 +15,6 @@ export const Carousel = () => {
         <Img />
         <Img1 />
         <Img />
-      <Overlay></Overlay>
       </MainCarousel>
     </CarouselWrapper>
   );

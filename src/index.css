@@ -75,7 +75,7 @@ body {
   width: 100% !important;
 }
 
-@media (max-width:550px) {
+/* @media (max-width:550px) {
   .sc-jOrMOR{
     display:none !important;
   }
@@ -96,4 +96,8 @@ body {
   .sc-BeQoi{
     display:none !important;
   }
+} */
+
+.slick-dots{
+margin: 0 0 !important;
 }

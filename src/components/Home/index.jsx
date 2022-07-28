@@ -4,12 +4,12 @@ import Filter from '../../components/Filter'
 // import Card from '../Card'
 import Carousel from '../Carousel'
 import Cards from '../Carousel/Cards'
-// import Category from '../Category'
 import Choose from '../Chose'
 import Elastic from '../Elastic'
 import Recent from '../Recent'
 import Recommem from '../Recommem'
 import Slick from '../Slick'
+import Test from '../Testminol'
 import { Container } from './style'
 
 export const Home = () => {
@@ -22,10 +22,10 @@ export const Home = () => {
       <Elastic/>
       {/* <Card/> */}
       <Choose />
-      {/* <Category/> */}
       <Slick />
       <Cards />
-      <Recent/>
+      <Recent />
+      <Test/>
     </Container>
   )
 }

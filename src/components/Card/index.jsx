@@ -1,10 +1,11 @@
-import React  from "react";
+import React ,{useState} from "react";
 import { BtnWrap,BtnWrapp, Container, Hr, IMG, Img, Title, Wrap, Wrapp, Wrapper} from "./style";
 import { home } from "../../mock/card";
-import {Button} from '../Generic/Button'
+import { Button } from '../Generic/Button';
 
 export const Card = () => {
-
+  const [selected, setSelected] = useState(false);
+ 
   return (
     <Container>
         {home.map((value, index) => {
@@ -37,7 +38,7 @@ export const Card = () => {
                 <Title.P>{value.prise}</Title.P>
                 <Wrap.Wraapper>
                   <IMG src={value.resize} />
-                  <IMG.IMGS src={value.love} />
+                  <IMG.IMGS src={value.love} onClick={()=>setSelected(!selected)} selected={selected} />
                 </Wrap.Wraapper>
               </Wrap>
             </Container.Card>

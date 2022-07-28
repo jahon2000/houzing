@@ -136,9 +136,10 @@ width :35px ;
 height:20px ;
 `
 IMG.IMGS = styled.img`
+  margin-bottom: 15px;
   width: 35px;
   height: 25px;
-  background: #f6f8f9;
+  background: ${({ selected }) => (selected ? "#CC4050" : "#f6f8f9")};
   border-radius: 40px;
 `;
 

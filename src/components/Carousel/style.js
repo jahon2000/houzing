@@ -5,18 +5,18 @@ import img1 from "../../assets/images/uycha.jpg";
 import img2 from "../../assets/images/uy.jpg";
 
 const CarouselWrapper = styled("div")`
-  position:relative ;
-  justify-content:center ;
-  align-items:center ;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 `;
 
 const MainCarousel = styled(Carousel)`
   height: fit-content;
-  
 `;
 const Img = styled.img.attrs({
   src: img1,
 })`
+  filter: brightness(20%);
   height: 571px;
   @media (max-width: 550px) {
     height: 100vh;
@@ -26,6 +26,7 @@ const Img = styled.img.attrs({
 const Img1 = styled.img.attrs({
   src: img2,
 })`
+  filter: brightness(20%);
   height: 571px;
   @media (max-width: 550px) {
     height: 100vh;
@@ -94,14 +95,6 @@ Icon.Right = styled(arrow)`
   }
 `;
 
-export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-`;
+
 
 export { CarouselWrapper, MainCarousel, Icon, Img, Img1 };
