@@ -1,10 +1,12 @@
 import styled from "styled-components";
-
+import  logoIcon  from "../../assets/images/ellipse2.png";
 export const Container = styled.div`
   width: 100%;
   background: #f5f7fc;
-  margin-top:110px;
-
+  margin-top: 110px;
+  overflow-x:hidden ;
+  overflow-y:hidden ;
+  
 `;
 export const Title = styled.div`
   font-family: "Montserrat";
@@ -38,8 +40,9 @@ margin-bottom:20px ;
 margin-top:32px;
 `
 export const Wrap = styled.div`
-/* display :flex ; */
-`
+  /* display :flex ; */
+  position: relative;
+`;
 
 
 export const Card = styled.div`
@@ -84,3 +87,18 @@ export const Item = styled.div`
   margin-top:4px;
 `;
 
+export const Icon = styled.div`
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+  left: 45%;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+`;
+
+Icon.Img = styled.img.attrs({
+  src: logoIcon,
+})`
+  
+`;

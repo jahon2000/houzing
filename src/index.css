@@ -75,24 +75,24 @@ body {
   width: 100% !important;
 }
 
-/* @media (max-width:550px) {
+@media (max-width:550px) {
   .sc-jOrMOR{
     display:none !important;
   }
 }
 
 @media (max-width:450px) {
-  .sc-jOrMOR{
+  .sc-cOFTSb{
     display:none !important;
   }
 }
 
-@media (max-width:450px) {
+/* @media (max-width:450px) {
   .sc-BeQoi{
     display:none !important;
   }
-}
-@media (max-width:550px) {
+} */
+/* @media (max-width:550px) {
   .sc-BeQoi{
     display:none !important;
   }

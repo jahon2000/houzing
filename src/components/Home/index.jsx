@@ -6,6 +6,7 @@ import Carousel from '../Carousel'
 import Cards from '../Carousel/Cards'
 import Choose from '../Chose'
 import Elastic from '../Elastic'
+import Footer from '../Footer'
 import Recent from '../Recent'
 import Recommem from '../Recommem'
 import Slick from '../Slick'
@@ -25,7 +26,8 @@ export const Home = () => {
       <Slick />
       <Cards />
       <Recent />
-      <Test/>
+      <Test />
+      <Footer/>
     </Container>
   )
 }

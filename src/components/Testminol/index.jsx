@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Item, NavItem, Title, TitleCard, Wrap, Wrapper, WrapTitle } from './style'
+import { Card, Container, Icon, Item, NavItem, Title, TitleCard, Wrap, Wrapper, WrapTitle } from './style'
 
 const Test = () => {
   return (
@@ -19,6 +19,9 @@ const Test = () => {
           </Card>
           <WrapTitle>Marvin McKinney</WrapTitle>
           <Item>Designer</Item>
+          <Icon>
+            <Icon.Img />
+          </Icon>
         </Wrap>
         <Wrap>
           <Card>
@@ -30,6 +33,9 @@ const Test = () => {
           </Card>
           <WrapTitle>Marvin McKinney</WrapTitle>
           <Item>Designer</Item>
+          <Icon>
+            <Icon.Img />
+          </Icon>
         </Wrap>
         <Wrap>
           <Card>
@@ -41,6 +47,9 @@ const Test = () => {
           </Card>
           <WrapTitle>Marvin McKinney</WrapTitle>
           <Item>Designer</Item>
+          <Icon>
+            <Icon.Img />
+          </Icon>
         </Wrap>
       </Wrapper>
     </Container>
