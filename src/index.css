@@ -94,7 +94,7 @@ body {
 margin: 0 0 !important;
 }
 .alice-carousel__stage-item{
-  width: 370px !important;
+  width: 380px !important;
   gap: 20px !important;
 }
 
@@ -105,5 +105,5 @@ span{
 
 .alice-carousel__stage{
   display: flex;
-  gap: 12px !important;
+  gap: 15px !important;
 }

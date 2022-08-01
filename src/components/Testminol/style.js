@@ -40,7 +40,6 @@ margin-bottom:20px ;
 margin-top:32px;
 `
 export const Wrap = styled.div`
-  /* display :flex ; */
   position: relative;
 `;
 
