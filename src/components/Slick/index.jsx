@@ -45,25 +45,24 @@ const Slick = () => {
   return (
     <Container>
       <Slider {...settings}>
-        <div>
-          <LogoKv />
-         
-        </div>
-        <div>
-          <LogoAp />
-        </div>
-        <div>
-          <LogoVill />
-        </div>
-        <div>
-          <LogoDom />
-        </div>
-        <div>
-          <LogoAp />
-        </div>
-        <div>
-          <LogoVill />
-        </div>
+         <div>
+             <LogoKv />       
+         </div>
+         <div>
+             <LogoAp />
+         </div>
+         <div>
+             <LogoVill />
+         </div>
+         <div>
+             <LogoDom />
+         </div>
+         <div>
+             <LogoAp />
+         </div>
+         <div>
+             <LogoVill />
+         </div>
       </Slider>
     </Container>
   );

@@ -14,7 +14,6 @@ import {
 } from "./style";
 import { Button } from "../Generic/Button";
 import Modal from "../Modal";
-// import Burger from '../Drawer/Burger'
 
 export const Navbar = () => {
   const navigate = useNavigate();

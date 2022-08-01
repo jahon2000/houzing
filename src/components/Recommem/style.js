@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const Container = styled.div` 
-width: 100%;
-align-items:center ;
-justify-content:center ;
+display:flex;
+flex-direction:column ;
 
 `
 const Title = styled.p`
@@ -35,5 +34,15 @@ const Item = styled.p`
   }
 `;
 
+const Body = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  width: 100%;
+  padding: 0 130px;
+  max-width: var(--width);
+`;
 
-export {Container , Title , Item}
+
+export {Container , Title , Item  , Body}

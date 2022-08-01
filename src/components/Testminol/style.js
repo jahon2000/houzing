@@ -4,9 +4,9 @@ export const Container = styled.div`
   width: 100%;
   background: #f5f7fc;
   margin-top: 110px;
-  overflow-x:hidden ;
-  overflow-y:hidden ;
-  
+  overflow-x: hidden;
+  overflow-y: hidden;
+  cursor:pointer ;
 `;
 export const Title = styled.div`
   font-family: "Montserrat";
@@ -51,6 +51,11 @@ export const Card = styled.div`
   border-radius: 3px;
   width: 380px;
   height: 197px;
+  :hover {
+    filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
+      drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
+      drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
+  }
 `;
 
 export const TitleCard = styled.div`

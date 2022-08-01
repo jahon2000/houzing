@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'react-elastic-carousel'
-import Card from '../Card/index'
+import Card from '../Generic/Card'
 const breakPoints = [
   { with: 1, itmesToShow: 1 },
   { with: 550, itmesToShow: 1 },

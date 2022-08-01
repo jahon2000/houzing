@@ -53,5 +53,8 @@ export const Items = styled.div`
 `;
 
 export const Card = styled.div` 
-margin-top:32px ;
+/* margin-top:32px ; */
+display:flex ;
+flex-direction:column ;
 `
+

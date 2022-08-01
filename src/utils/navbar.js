@@ -8,6 +8,7 @@ export const navbar = [
     title: "Properties",
     path: "/properties",
     hidden: false,
+    private: false,
   },
   {
     id: 3,
