@@ -11,7 +11,7 @@ justify-content:center;
 align-items: center;
 /* margin-bottom:50px; */
 position:relative;
-
+margin-top:30px;
 `
 
 export const LogoKv = styled.img.attrs({

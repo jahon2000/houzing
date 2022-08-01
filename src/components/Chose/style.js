@@ -21,6 +21,7 @@ export const Wrapper = styled.div`
   max-width: 1440px;
   justify-content: center;
   align-items: center;
+  padding:10px;
   @media (max-width:550px){
     /* height:100vh; */
     /* width:100%;  */
@@ -105,14 +106,13 @@ export const Location = styled.img.attrs({
 export const Items = styled.div`
 align-items:center ;
 text-align:center ;
-
 `;
 
 export const ItemNav = styled.div`
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   color: #0d263b;
   gap:81px;

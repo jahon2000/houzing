@@ -3,7 +3,7 @@ import  logoIcon  from "../../assets/images/ellipse2.png";
 export const Container = styled.div`
   width: 100%;
   background: #f5f7fc;
-  margin-top: 110px;
+  margin-top: 20px;
   overflow-x: hidden;
   overflow-y: hidden;
   cursor:pointer ;

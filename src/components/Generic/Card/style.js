@@ -233,7 +233,7 @@ const Container = styled.div`
   height: 450px;
   background: #ffffff;
   margin: ${({ margin }) => margin && "0 1em"};
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid #e6e9ec;
   border-radius: 3px;
   :hover {
@@ -391,6 +391,7 @@ justify-content:center ;
 align-items:center ;
 flex-wrap: wrap;
 gap:20px;
+margin-top:20px;
 `
 
 export { Container, Image, Info, InfoWrapper, Price, Icons, User ,Itms };

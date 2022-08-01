@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { ReactComponent as arrow } from "../../assets/icons/carousel.svg";
 
 export const Container = styled.div` 
-width:100%;
+/* width:100%; */
 justify-content:center ;
 align-items:center ;
 margin-top:70px;
@@ -52,9 +53,76 @@ export const Items = styled.div`
   }
 `;
 
-export const Card = styled.div` 
-/* margin-top:32px ; */
-display:flex ;
-flex-direction:column ;
-`
+export const Cards = styled.div`
+  display: flex;
+  width: 1440px;
+  margin-top: 32px;
+  justify-content: space-between;
+  padding: 0 130px;
+`;
 
+export const ArrowLeft = styled(arrow)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(100%, -50%) rotate(180deg);
+  width: 45px;
+  height: 45px;
+  color: white;
+  background: white;
+  padding: 12px;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
+  filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
+  :hover {
+    opacity: 0.97;
+  }
+  & path {
+    fill: #0d263b;
+  }
+`;  
+
+export const ArrowRight = styled(arrow)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-100%, -50%);
+  width: 45px;
+  height: 45px;
+  color: white;
+  background: white;
+  padding: 12px;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  :hover {
+    opacity: 0.9;
+  }
+  & path {
+    fill: #0d263b;
+  }
+`;
+
+export const IconArrow = styled(arrow)`
+  width: 7px;
+  height: 10px;
+`;
+
+export const Wrapp = styled("div")`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+`;
