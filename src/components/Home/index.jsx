@@ -22,7 +22,7 @@ export const Home = () => {
       <Cards />
       <Recent />
       <Test />
-      <Footer/>
+     <Footer/>
     </Container>
   )
 }

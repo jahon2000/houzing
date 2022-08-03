@@ -1,6 +1,7 @@
 import Generic from "../pages/Generic";
 import Home from "../components/Home";
 import Proporties from "../components/Proporties";
+import SignInPage from "../pages/SingIn";
 export const navbar = [
   { id: 1, element: <Home />, title: "Home", path: "/home", hidden: false },
   {
@@ -20,7 +21,7 @@ export const navbar = [
   },
   {
     id: 4,
-    element: <Generic />,
+    element: <SignInPage/>,
     title: "Singin",
     path: "/singin",
     hidden: true,
