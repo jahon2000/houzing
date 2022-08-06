@@ -6,13 +6,11 @@ import {
   Fragment,
   Icons,
   Title,
-  
 } from "./style";
 import Input from "../Generic/Input";
 import Button from "../Generic/Button";
 import { Popover } from "antd";
 export const Filter = () => {
- 
   const content = (
     <ContentWrapperr>
       <Title>Address</Title>
@@ -45,7 +43,7 @@ export const Filter = () => {
           marginLeft: "auto",
         }}
       >
-        <Button  type={"four"} width={"130px"}>
+        <Button type={"four"} width={"130px"}>
           Cancel
         </Button>
         <Button type={"five"} width={"130px"}>
@@ -57,28 +55,25 @@ export const Filter = () => {
   return (
     <div className="center">
       <Container>
-
         <Input
           pl={"50px"}
           placeholder={"Enter an address, neighborhood, city, or ZIP code"}
-          >
+        >
           <Icons.SearchIcon />
         </Input>
-        
-        
-          <BtnWrap>
-        <Popover placement="bottomRight" content={content} trigger="click">
-          <Button type={"secondary"} width={"131px"}>
-            <Icons.SearchAdvensed />
-            Advanced
+
+        <BtnWrap>
+          <Popover placement="bottomRight" content={content} trigger="click">
+            <Button type={"secondary"} width={"131px"}>
+              <Icons.SearchAdvensed />
+              Advanced
+            </Button>
+          </Popover>
+          <Button type={"primary"} width={"131px"}>
+            <Icons.SearchLoop />
+            Search
           </Button>
-        </Popover>
-        <Button type={"primary"} width={"131px"}>
-          <Icons.SearchLoop />
-          Search
-        </Button>
-          </BtnWrap>
-          
+        </BtnWrap>
       </Container>
     </div>
   );

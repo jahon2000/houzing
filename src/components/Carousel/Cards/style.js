@@ -59,7 +59,7 @@ export const Wrapper = styled.div`
 position:absolute;
 z-index:1;
 top:324px;
-left:630px;
+left:660px;
   @media (max-width:550px){
     left:90px;
     right:90px;

@@ -1,6 +1,6 @@
 import React from "react";
 import { navbar } from "../../utils/navbar";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import {
   BTNWRAP,
   Container,
@@ -12,16 +12,54 @@ import {
   UserWrap,
   Wrapper,
 } from "./style";
-import { Button } from "../Generic/Button";
+import Button from "../Generic/Button";
 import Modal from "../Modal";
 
 export const Navbar = () => {
+  const location = useLocation();
+
+  const gotoSignIn = () => {
+    navigate("/signin");
+  };
+  const logout = () => {
+    localStorage.removeItem("token");
+    if (location?.pathname?.includes("profile")) {
+      navigate("/home");
+    } else {
+      navigate(location.pathname);
+    }
+  };
+
+  var button;
+
+  localStorage.getItem("token")
+    ? (button = (
+        <Button
+          onClick={() => navigate("/profile")}
+          type={"four"}
+          width={"120px"}
+        >
+          Profile
+        </Button>
+      ))
+    : (button = (
+        <Button onClick={gotoSignIn} width={"120px"}>
+          Log In
+        </Button>
+      ));
+  location.pathname.includes("profile") &&
+    // eslint-disable-next-line no-unused-vars
+    (button = (
+      <Button onClick={logout} width={"150px"} type="four">
+        Log out
+      </Button>
+    ));
+
   const navigate = useNavigate();
   return (
     <Wrapper>
       <Container>
         <ModalBurger>
-          {/* <Burger/> */}
           <Modal />
         </ModalBurger>
         <NavbarWrapper>
@@ -42,16 +80,20 @@ export const Navbar = () => {
           </NavbarBody>
           {localStorage.getItem("token") ? (
             <>
-              <h1 onClick={() => navigate("/myproperties")}>Profile</h1>
-              <button
+              <Button mr='10' width={"120px"} onClick={() => navigate("/myproperties")}>
+                Profile
+              </Button>
+              <Button
                 onClick={() => {
                   localStorage.clear();
                   navigate("/home");
                 }}
                 width={"120px"}
+                
+                type=""
               >
                 Log Out
-              </button>
+              </Button>
             </>
           ) : (
             <BTNWRAP>

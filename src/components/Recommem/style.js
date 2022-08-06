@@ -78,7 +78,7 @@ export const ArrowRight = styled(arrow)`
   align-items: center;
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 5px;
   transform: translate(-100%, -50%);
   width: 45px;
   height: 45px;

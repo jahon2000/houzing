@@ -4,6 +4,7 @@ import { navbar } from "../utils/navbar";
 import { Container } from "./style";
 import Error from "../pages/Error";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 export const Root = () => {
   return (
     <Container>
@@ -13,7 +14,8 @@ export const Root = () => {
         {navbar.map((value) => (
           <Route key={value.id} path={value.path} element={value.element} />
           ))}
-          </Route>
+        </Route>
+        <Route element={<Footer/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
     </Container>

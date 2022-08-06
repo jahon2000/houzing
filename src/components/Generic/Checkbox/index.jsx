@@ -1,0 +1,32 @@
+import React from 'react';
+import { AntCheckbox } from './style';
+
+export const Checkbox = ({
+  children,
+  onClick,
+  height,
+  width,
+  mr,
+  ml,
+  mb,
+  mt,
+  onChange,
+  size,
+}) => {
+  return (
+    <AntCheckbox
+      mr={mr}
+      ml={ml}
+      mb={mb}
+      mt={mt}
+      width={width}
+      height={height}
+      size={size}
+      onChange={onChange}
+      onClick={onClick}
+    >
+      {children}
+    </AntCheckbox>
+  );
+};
+export default Checkbox;
